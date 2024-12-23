@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+input {
+    width: 200%;
+    height: 2rem;
+    margin: 3%;
+    padding: 2px;
+
+    background: none;
+    border: 0;
+    border-bottom: solid 1px #0000006c;
+}
+
+input:focus{
+    outline: none;
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    margin: 10%;
+}
+
+.btn-0 {
+  background: #11ae52;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.btn-0:hover{
+    background: #109d4b;
+}
+
+.btn-1 {
+  background: #d02c1d;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.btn-1:hover{
+    background: #bc281a;
+}
+
+form {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.paragraph {
+    padding-top: 50px;
+    margin: 10px;
+}
+
+.panel {
+    /*position: relative;
+    */height: 70%;
+    width: 75vh;
+    background-color: #fff /*#dcdcdc*/;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #00000034;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.answer_h3{
+    margin-bottom: 30px;
+}

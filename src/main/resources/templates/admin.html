@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"  href="/css/header.css">
+    <link rel="stylesheet"  href="/css/admin.css">
+</head>
+<body>
+<header th:insert="~{parts/header :: header}"></header>
+<div class="banner">
+    <div class="panel">
+        <h2 class="paragraph">Добавить в ассортимент</h2>
+        <form id="postForm">
+            <input id="data_1" type="text" name="name" placeholder="Введите название позиции" class="form-control"><br>
+            <input id="data_2" type="text" name="price" placeholder="Введите цену позиции" class="form-control"><br>
+            <input id="data_3" type="text" name="text" placeholder="Введите описание" class="form-control"><br>
+            <button id="submit_button" type="submit" class="btn-0">Добавить</button>
+        </form>
+        <script src="/js/post_form.js"></script>
+    </div>
+    <div class="panel">
+        <h2 class="paragraph">Узнать ID по названию</h2>
+        <form id="askForm" action="admin" method="get">
+            <input id="ask_data_1" type="text" name="ask_name" placeholder="Введите название позиции" class="form-control"><br>
+            <button id="ask_submit_button" type="submit" class="btn-0">Узнать</button>
+        </form>
+        <h3 th:text="${answer}" class="answer_h3"></h3>
+    </div>
+    <div class="panel">
+        <h2 class="paragraph">Удалить из ассортимента</h2>
+        <form id="deleteForm">
+            <input id="delete_data_1" type="text" name="delete_id" placeholder="Введите ID" class="form-control"><br>
+            <button id="delete_submit_button" type="submit" class="btn-1">Удалить</button>
+        </form>
+        <script src="/js/delete_form.js"></script>
+    </div>
+</div>
+</body>
+</html>
