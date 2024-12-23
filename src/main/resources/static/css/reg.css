@@ -1,76 +1,87 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f5f5dc; /* Бежевый фон */
 }
 
 h2 {
-
-  text-align: center;
-  padding-top: 30px;
-  margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: #4b3d22; /* Темно-коричневый текст */
+    font-size: 28px;
 }
 
 .testbox {
-  margin: 20px auto;
-  width: 343px;
-  height: 424px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px #00000034;
-  background-color: #ffffff;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+    margin: 20px auto;
+    width: 343px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); /* Тень для объема */
+    background-color: #fffff0; /* Светло-бежевый фон */
+    border: 3px solid #8b4513; /* Коричневая рамка */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
-form{
-  margin: 0 30px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-input[type=text],input[type=password]{
-  width: 100%;
-  height: 45px;
-  border-radius: 15px;
-  background-color: #fff;
-  border: solid 1px #0000003d;
-  margin-top: 8px;
-  padding-left: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #fffff0; /* Светло-бежевый фон */
+    border: 2px solid #8b4513; /* Коричневая рамка */
+    margin-top: 8px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #4b3d22; /* Темно-коричневый текст */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
-input[type=password]{
-  margin-bottom: 28px;
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+    border-color: #654321; /* Темно-коричневая рамка при фокусе */
+}
+
+input[type=password] {
+    margin-bottom: 28px;
 }
 
 button {
     width: 100%;
     height: 3rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .btn-0 {
-  background: #11ae52;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 15px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 14px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+    background: #8b4513; /* Коричневый фон */
 }
 
-.btn-0:hover{
-  background: #109d4b;
+.btn-0:hover {
+    background: #654321; /* Темно-коричневый фон при наведении */
 }

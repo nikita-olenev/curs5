@@ -1,102 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f5f5dc; /* Бежевый фон */
 }
 
 .banner {
     position: relative;
     background-size: cover;
     background-position: center;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #f5f5dc; /* Бежевый фон */
+    color: #4b3d22; /* Темно-коричневый текст */
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    padding: 20px;
 }
 
-.menu_container{
+.menu_container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
-
-
-
-.bar{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  width: 500px;
-  display: flex;
-  flex-direction: row;
+.search-block {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffff0; /* Светло-бежевый фон */
+    border: 3px solid #8b4513; /* Коричневая рамка */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Тень для объема */
 }
 
-.searchbar{
-  height: 45px;
-  border: 3px solid #11ae52;
-  border-radius: 15px;
-  width: 400px;
-  font-size: 14px;
-  outline: none;
-  padding-left: 15px;
+.bar {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.btn-0 {
-  width: 100px;
-  height: 45px;
-  background: #11ae52;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 15px;
-  cursor: pointer;
-  padding: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-  font-size: 14px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+.searchbar {
+    height: 45px;
+    border: 3px solid #8b4513; /* Коричневая рамка */
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    outline: none;
+    padding-left: 15px;
+    background-color: #fffff0; /* Светло-бежевый фон */
+    color: #4b3d22; /* Темно-коричневый текст */
 }
 
-.bar:hover{
-    box-shadow: 0 0 0 2px white;
+.btn-0, .btn-1 {
+    width: 150px;
+    height: 45px;
+    background: #8b4513; /* Коричневый фон */
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
-.btn-0:hover {
-  background: #109d4b;
-}
-
-.btn-1 {
-  width: 500px;
-  height: 45px;
-  background: #11ae52;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 15px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 14px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-}
-
-.btn-1:hover {
-  background: #109d4b;
+.btn-0:hover, .btn-1:hover {
+    background: #654321; /* Темно-коричневый фон при наведении */
 }
 
 .filter_bar {

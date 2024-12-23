@@ -6,7 +6,8 @@
     position: relative;
     z-index: 100;
     width: 100%;
-    background: #6a5d4d;
+    background: #8b4513; /* Коричневый фон */
+    border-bottom: 3px solid #6a5d4d; /* Темно-коричневая рамка */
 }
 
 .navigation .logo {
@@ -17,13 +18,10 @@
     font-weight: 600;
     text-decoration: none;
     height: 35px;
+    font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
 }
 
-.navigation .logo_img {
-    margin-right: 10px;
-}
-
-.navigation .menu-list{
+.navigation .menu-list {
     display: flex;
     position: relative;
 }
@@ -39,23 +37,23 @@
     font-size: 15px;
     margin: 0 12px;
     text-decoration: none;
+    font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
 }
 
-.menu-item a:hover{
+.menu-item a:hover {
     text-decoration: underline;
 }
 
-.burger, .burger + label{
+.burger, .burger-label {
     display: none;
 }
 
-@media screen and (max-width: 1000px){
-
-    .menu-list *{
+@media screen and (max-width: 1000px) {
+    .menu-list * {
         display: none;
     }
 
-    .burger, .burger + label{
+    .burger, .burger-label {
         position: fixed;
         right: 20px;
         top: 20px;
@@ -64,35 +62,39 @@
         cursor: pointer;
     }
 
-    nav label::before{
+    nav .burger-label::before {
         content: '☰';
-        color:#ffffff;
+        color: #ffffff;
+        font-size: 24px;
     }
 
-    .burger + label{
+    .burger-label {
         display: block;
     }
 
-    .burger:checked ~ .menu-list{
+    .burger:checked ~ .menu-list {
         height: auto;
         display: block;
+        background: #8b4513; /* Коричневый фон */
+        border-bottom: 3px solid #6a5d4d; /* Темно-коричневая рамка */
     }
 
-    .burger:checked ~ .menu-list *{
+    .burger:checked ~ .menu-list * {
         display: block;
         font-size: 18px;
         margin: 15px;
+        text-align: center;
     }
 
-    nav label{
+    nav .burger-label {
         transition: 0.3s;
     }
 
-    .burger:checked ~ label{
+    .burger:checked ~ .burger-label {
         transform: rotate(90deg);
     }
 
-    .navigation{
+    .navigation {
         justify-content: left;
     }
 }

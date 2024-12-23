@@ -1,117 +1,97 @@
- .wrapper {
-    height: 420px;
-    width: 654px;
-    margin: 50px auto;
-    border-radius: 7px 7px 7px 7px;
-    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  }
+.wrapper {
+  display: flex; /* Используем Flexbox */
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px;
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  border: 3px solid #8b4513; /* Коричневая рамка */
+  background-color: #f5f5dc; /* Бежевый фон */
+}
 
-  .product-img {
-    float: left;
-    height: 420px;
-    width: 327px;
-    background: url("pictures/bar.jpeg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+.product-img {
+  width: 327px;
+  background: url("pictures/img_1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-right: 3px solid #8b4513; /* Коричневая рамка */
+}
 
-  .product-info {
-    float: left;
-    height: 420px;
-    width: 327px;
-    background-color: #ffffff;
-  }
+.product-info {
+  width: 327px;
+  background-color: #fffff0; /* Светло-бежевый фон */
+  border-left: 3px solid #8b4513; /* Коричневая рамка */
+  padding: 20px; /* Внутренние отступы */
+  box-sizing: border-box; /* Включаем padding в общую ширину */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .product-text {
-    height: 300px;
-    width: 327px;
-  }
+.product-text {
+  height: auto;
+}
 
-  .product-text h1 {
-    margin: 0 0 0 38px;
-    padding-top: 52px;
-    font-size: 34px;
-    color: #474747;
-  }
+.product-text h1 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  color: #4b3d22; /* Темно-коричневый текст */
+  font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
+  text-align: center; /* Центрирование заголовка */
+}
 
-  .product-text h1,
-  .product-price-btn p {
-    font-family: 'Montserrat', sans-serif;
-  }
+.product-text p {
+  margin: 0;
+  font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
+  color: #4b3d22; /* Темно-коричневый текст */
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: justify; /* Выравнивание текста по ширине */
+}
 
-  .product-text h2 {
-    margin: 0 0 47px 38px;
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #d2d2d2;
-    letter-spacing: 0.2em;
-  }
+.product-price-btn {
+  height: auto;
+  margin-top: 20px;
+  text-align: center; /* Центрирование содержимого */
+}
 
-  .product-text p {
-    height: 125px;
-    margin: 0 0 0 38px;
-    font-family: 'Playfair Display', serif;
-    color: #8d8d8d;
-    line-height: 1.7em;
-    font-size: 15px;
-    font-weight: lighter;
-    overflow: hidden;
-  }
+.product-price-btn p {
+  margin: 0;
+  font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
+  font-size: 24px;
+  font-weight: lighter;
+  color: #4b3d22; /* Темно-коричневый текст */
+}
 
-  .product-price-btn {
-    height: 103px;
-    width: 327px;
-    margin-top: 17px;
-    position: relative;
-  }
+.card_span {
+  font-size: 30px;
+  font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
+}
 
-  .product-price-btn p {
-    display: inline-block;
-    position: absolute;
-    top: -13px;
-    height: 50px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 0 38px;
-    font-size: 28px;
-    font-weight: lighter;
-    color: #474747;
-  }
+.product-price-btn button {
+  display: inline-block;
+  height: 40px;
+  width: 176px;
+  margin: 20px auto 0 auto;
+  box-sizing: border-box;
+  border: 2px solid #8b4513; /* Коричневая рамка */
+  border-radius: 30px;
+  font-family: 'Times New Roman', serif; /* Шрифт, похожий на газетный */
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: #8b4513; /* Коричневый фон */
+  cursor: pointer;
+  outline: none;
+}
 
-  .card_span {
-    display: inline-block;
-    height: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 34px;
-  }
+.product-price-btn button:hover {
+  background-color: #654321; /* Темно-коричневый фон при наведении */
+}
 
-  .product-price-btn button {
-    float: right;
-    display: inline-block;
-    height: 50px;
-    width: 176px;
-    margin: 25px 40px 0 16px;
-    box-sizing: border-box;
-    border: transparent;
-    border-radius: 60px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #ffffff;
-    background-color: #9cebd5;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .product-price-btn button:hover {
-    background-color: #79b0a1;
-  }
-
-  .order_bar {
-      display: none;
-  }
+.order_bar {
+  display: none;
+}

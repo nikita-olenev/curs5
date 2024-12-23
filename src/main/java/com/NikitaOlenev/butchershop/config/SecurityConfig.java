@@ -28,13 +28,20 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-
-        return http.csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(auth -> auth.requestMatchers(new AntPathRequestMatcher("/**"))
-                        .permitAll().anyRequest()
-                        .permitAll())
-                .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
-                .build();
+        http
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(auth -> auth
+                        .anyRequest().permitAll() // Разрешить доступ ко всем страницам без аутентификации
+                )
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .permitAll()
+                )
+                .logout(logout -> logout
+                        .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                        .permitAll()
+                );
+        return http.build();
     }
 
     @Bean

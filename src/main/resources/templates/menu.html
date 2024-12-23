@@ -3,17 +3,17 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet"  href="/css/header.css">
-    <link rel="stylesheet"  href="/css/menu.css">
-    <link rel="stylesheet"  href="/css/card.css">
-    <link rel="stylesheet"  href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
 <header th:insert="~{parts/header :: header}"></header>
 <div class="banner">
     <div class="search-block">
         <form id="bar" class="bar" action="menu" method="get">
-            <input id="data_1" type="text" name="ask_name" class="searchbar" title="Search" placeholder="Поиск мяса">
+            <input id="data_1" type="text" name="ask_name" class="searchbar" title="Search" placeholder="Поиск газет">
             <button id="search_button" type="submit" class="btn-0">Найти</button>
         </form>
         <form id="filter" class="bar" action="menu" method="get">

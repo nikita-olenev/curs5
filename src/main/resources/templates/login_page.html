@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/reg.css">
 </head>
 <body>
-$END$
+<header th:insert="~{parts/header :: header}"></header>
+<div class="testbox">
+    <h2>Вход</h2>
+    <form th:action="@{/login}" method="post">
+        <input type="text" name="username" placeholder="Email" required/>
+        <input type="password" name="password" placeholder="Пароль" required/>
+        <button type="submit" class="btn-0">Войти</button>
+    </form>
+</div>
 </body>
 </html>
